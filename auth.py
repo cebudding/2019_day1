@@ -1,8 +1,25 @@
 import pickle
+import getpass
+import random 
+
+ALPHABET = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+def get_salt(password):
+    chars=[]
+    for i in range(10):
+        chars.append(random.choice(ALPHABET))
+        "".join(chars)
+    return chars
+
+def pwhash(password):
+    hashedpw = 0
+    for char in password:
+        hashedpw += ord(char)
+    return hashedpw
 
 def get_credentials():
     username = input("Enter username:")
-    password = input("Enter password:")
+    password = pwhash(getpass.getpass("Enter password:"))
     return (username, password)
 
 def authenticate(username, password, pwdb):
