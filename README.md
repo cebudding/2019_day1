@@ -1,5 +1,5 @@
 # Syllabus
-Day 1
+- Day 1
     - Summary of git internals
     - Standard git workflow
     - Forking and cloning repos
@@ -7,7 +7,7 @@ Day 1
     - Making pull-requests
     - Reviewing and merging a pull-request
 
-Day 2
+- Day 2
     - Benefits of prototyping
     - Project management and Agile
     - Basics of good testing
@@ -15,10 +15,10 @@ Day 2
     - Essentials of PyTest
     - Continuous Integration with Travis CI
 
-Day 3 & 4
+- Day 3 & 4
     - Contributing to Numpy
 
-Day 5
+- Day 5
     - Planning and preparation for the semester project
     - Requested tutorials
 
